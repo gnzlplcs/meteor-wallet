@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { ContactsCollection } from "../api/ContactsCollection";
 
 // contact: name, email, imageUrl
-const ContactForm = () => {
+export const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [imageUrl, setImageUrl] = useState("");
@@ -51,5 +51,3 @@ const ContactForm = () => {
     </form>
   );
 };
-
-export default ContactForm;
